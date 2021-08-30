@@ -30,6 +30,11 @@ const routes = [
     redirect: { name: 'manage' },
   },
   {
+    path: '/song/:id',
+    name: 'song',
+    component: () => import('../views/Song.vue'),
+  },
+  {
     path: '/:catchAll(.*)*',
     redirect: { name: 'home' },
   },
