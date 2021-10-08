@@ -18,7 +18,7 @@
       </div>
       <vee-form :validation-schema="schema" :initial-values="song" @submit="edit">
         <div class="mb-3">
-          <label class="inline-block mb-2">Song Title</label>
+          <label class="inline-block mb-2">{{ $t('compositionitem.song_title') }}</label>
           <vee-field type="text" name="modified_name"
                  class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300
                         transition duration-500 focus:outline-none focus:border-black rounded"
@@ -26,7 +26,7 @@
           <ErrorMessage class="text-red-600" name="modified_name" />
         </div>
         <div class="mb-3">
-          <label class="inline-block mb-2">Genre</label>
+          <label class="inline-block mb-2">{{ $t('compositionitem.genre') }}</label>
           <vee-field type="text" name="genre"
                  class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300
                         transition duration-500 focus:outline-none focus:border-black rounded"
@@ -35,11 +35,11 @@
         </div>
         <button type="submit" class="py-1.5 px-3 rounded text-white bg-green-600"
           :disabled="in_submission">
-          Submit
+          {{ $t('submit') }}
         </button>
         <button type="button" class="py-1.5 px-3 rounded text-white bg-gray-600"
          :disabled="in_submission" @click.prevent="showForm = false">
-          Go Back
+          {{ $t('goback') }}
         </button>
       </vee-form>
     </div>
@@ -82,7 +82,7 @@ export default {
       in_submission: false,
       show_alert: false,
       alert_variant: 'bg-blue-500',
-      alert_massage: 'Please wait! Updating song info.',
+      alert_massage: this.$t('compositionitem.wait'),
     };
   },
   methods: {
@@ -90,14 +90,14 @@ export default {
       this.in_submission = true;
       this.show_alert = true;
       this.alert_variant = 'bg-blue-500';
-      this.alert_massage = 'Please wait! Updating song info.';
+      this.alert_massage = this.$t('compositionitem.wait');
 
       try {
         await songsCollection.doc(this.song.docID).update(values);
       } catch (error) {
         this.in_submission = false;
         this.alert_variant = 'bg-red-500';
-        this.alert_massage = 'Something went wrong! Try again later.';
+        this.alert_massage = this.$t('compositionitem.wrong');
         return;
       }
 
@@ -106,7 +106,7 @@ export default {
 
       this.in_submission = false;
       this.alert_variant = 'bg-green-500';
-      this.alert_massage = 'Success!';
+      this.alert_massage = this.$t('compositionitem.success');
     },
     async deleteSong() {
       const storageRef = storage.ref();

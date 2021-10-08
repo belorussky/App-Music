@@ -1,0 +1,55 @@
+{
+  "auth": {
+    "login": "Zaloguj sie",
+    "register": "Zarejestrować",
+    "your_account": "Twoje konto"
+  },
+  "compositionitem": {
+    "genre": "Gatunek muzyczny",
+    "song_title": "Tytuł utworu",
+    "success": "Powodzenie!",
+    "wait": "Proszę czekać! Aktualizuję informacje o utworze.",
+    "wrong": "Coś poszło nie tak! Spróbuj ponownie później."
+  },
+  "goback": "Wróć",
+  "header": {
+    "about": "O nas",
+    "logout": "Wyloguj",
+    "logreg": "Zaloguj się / Zarejestruj się",
+    "manage": "Zarządzać"
+  },
+  "home": {
+    "listen": "Posłuchaj wspaniałej muzyki!",
+    "music": "Najlepsza muzyka jest zawsze tam."
+  },
+  "login": {
+    "enter_email": "Wprowadź e-mail",
+    "invalid": "Nieprawidłowe dane logowania.",
+    "password": "Hasło",
+    "success": "Powodzenie! Jesteś teraz zalogowany.",
+    "wait": "Proszę czekać! Logujemy Cię."
+  },
+  "manage": {
+    "my_songs": "Moje Piosenki"
+  },
+  "player": {
+    "upload": "Przesłane przez"
+  },
+  "register": {
+    "TOS": "Warunki usługi",
+    "accept": "Akceptuję Muzyka {0}",
+    "age": "Wiek",
+    "confirm_password": "Potwierdź hasło",
+    "country": "Kraj",
+    "enter_name": "Wprowadź imię",
+    "name": "Nazwa",
+    "success": "Powodzenie! Twoje konto zostało utworzone.",
+    "try_again": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie później.",
+    "wait": "Proszę czekać! Twoje konto jest tworzone."
+  },
+  "some": {
+    "comment_count": "Brak komentarzy | 1 komentarz | {count} Komentarze"
+  },
+  "submit": "Składać",
+  "upload": "Wgrywać"
+}

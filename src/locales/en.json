@@ -1,0 +1,55 @@
+{
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "your_account": "Your Account"
+  },
+  "compositionitem": {
+    "genre": "Genre",
+    "song_title": "Song Title",
+    "success": "Success!",
+    "wait": "Please wait! Updating song info.",
+    "wrong": ""
+  },
+  "goback": "Go Back",
+  "header": {
+    "about": "About",
+    "logout": "Logout",
+    "logreg": "Login / Register",
+    "manage": "Manage"
+  },
+  "home": {
+    "listen": "Listen to Great Music!",
+    "music": "The best music is always there."
+  },
+  "login": {
+    "enter_email": "Enter Email",
+    "invalid": "Invalid login details.",
+    "password": "Password",
+    "success": "Success! You are now logged in.",
+    "wait": "Please wait! We are logging you in."
+  },
+  "manage": {
+    "my_songs": "My Songs"
+  },
+  "player": {
+    "upload": "Uploaded by"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Music's {0}",
+    "age": "Age",
+    "confirm_password": "Confirm Password",
+    "country": "Country",
+    "enter_name": "Enter Name",
+    "name": "Name",
+    "success": "Success! Your account has been created.",
+    "try_again": "An unexpected error occured. Please try again later.",
+    "wait": "Please wait! Your account is being created."
+  },
+  "some": {
+    "comment_count": "No comments | 1 Comment | {count} Comments"
+  },
+  "submit": "Submit",
+  "upload": "Upload"
+}
