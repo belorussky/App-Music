@@ -19,9 +19,8 @@ const routes = [
       requiresAuth: true,
     },
     // alias: '/manage',
-    component: () => import('../views/Manage.vue'),
+    component: () => import(/* webpackChunkName: "groupedChunk" */'../views/Manage.vue'),
     beforeEnter: (to, from, next) => {
-      console.log('Manage Route Guard');
       next();
     },
   },
@@ -32,7 +31,7 @@ const routes = [
   {
     path: '/song/:id',
     name: 'song',
-    component: () => import('../views/Song.vue'),
+    component: () => import(/* webpackChunkName: "groupedChunk" */'../views/Song.vue'),
   },
   {
     path: '/:catchAll(.*)*',
@@ -53,7 +52,7 @@ router.beforeEach((to, from, next) => {
     return;
   }
 
-  if (store.state.userLoggedIn) {
+  if (store.state.auth.userLoggedIn) {
     next();
   } else {
     next({ name: 'home' });

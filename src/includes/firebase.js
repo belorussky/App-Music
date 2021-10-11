@@ -2,7 +2,6 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 import 'firebase/storage';
-// import { error } from 'autoprefixer/lib/utils';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBP0_PC0FrDCQEqAab-zN7dtyoBEMMBhzc',
